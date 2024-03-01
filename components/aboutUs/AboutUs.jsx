@@ -20,7 +20,7 @@ const AboutUs = () => {
             <div className="shape shape-7" />
             <h1 className="main-heading">ABOUT US</h1>
           </div>
-          <p className='font-normal'><span className="green-text font-semibold"><span className="font-semibold">SENECA ZAMBIA LIMITED</span></span> is a logistics and warehousing company that provides sourcing, logistics & trading services. With a speciality in agricultural commodities, mining, and industrial usage(s), we strive to provide the highest quality products for consumers in partnership with some of the world's most successful and sophisticated retailers, wholesalers, importers, packagers, canners, brokers, growers & logisticscompanies.</p>
+          <p className='font-normal'><span className="green-text font-semibold"><span className="font-semibold">SENECA ZAMBIA LIMITED</span></span> is a logistics and warehousing company that provides sourcing, logistics & trading services. With a speciality in agricultural commodities, mining, and industrial usage(s), we strive to provide the highest quality products for consumers in partnership with some of the world&apos;s most successful and sophisticated retailers, wholesalers, importers, packagers, canners, brokers, growers & logisticscompanies.</p>
           <br />
           <p>Our vast experience in commodities trading has helped us forge alliances within the value chain with key stakeholders like <strong>DSC Logistics</strong> that are highly respected for their outstanding performance and operation processes - from due diligence through to management of business plan execution and investment realization.</p>
           <br />
