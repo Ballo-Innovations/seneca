@@ -21,7 +21,7 @@ const GetInTouch = () => {
                   className="get-in-touch-logo"
                 />
               </div>
-              <p className="mb-30 font-light"><strong>SENECA ZAMBIA LIMITED</strong> is a logistics and warehousing company that provides sourcing, logistics & trading services. With a speciality in agricultural commodities, mining and industrial usage(s), we strive to bring the highest quality products for consumers in partnership with some of the world's most successful and sophisticated retailers, wholesellers, importers, packagers, canners, brokers, growers & logistics companies.</p>
+              <p className="mb-30 font-light"><strong>SENECA ZAMBIA LIMITED</strong> is a logistics and warehousing company that provides sourcing, logistics & trading services. With a speciality in agricultural commodities, mining and industrial usage(s), we strive to bring the highest quality products for consumers in partnership with some of the world&apos;s most successful and sophisticated retailers, wholesellers, importers, packagers, canners, brokers, growers & logistics companies.</p>
             </div>
           </div>
 
