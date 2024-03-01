@@ -38,7 +38,7 @@ const Home = () => {
               <p>AFRICAN</p>
               <p>TRADE</p>
               <p className="relative">PARTNER</p>
-              <div className="d-sm-none shape mobile-shape-1" />
+              <div className="d-sm-none shape mobile-shape-1" style={{ background: 'black' }} />
             </div>
           </div>
         </div>

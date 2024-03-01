@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div id='about-us' className="nav-padding border-b relative" style={{ backgroundImage: `url(${fabric.src})` }}>
       <div className="flex flex-col-reverse flex-lg-row pb-32">
-        <div className="col-12 col-md-6 md:pr-24">
+        <div className="mt-5 mt-lg-0 col-12 col-md-6 md:pr-24">
           <Image
             src={about_img}
             alt="Tractor "
