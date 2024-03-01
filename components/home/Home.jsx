@@ -141,7 +141,7 @@ const Home = () => {
           </div>
           <Image
             src={expertise_1}
-            alt="Tractor "
+            alt="Tractor"
             quality={100}
             className="cover-img expertise-img-2 col-7"
             // blurDataURL={expertise_2.blurDataURL}
