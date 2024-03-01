@@ -12,6 +12,10 @@ footer {
     padding: 0 0.5em;
   }
 
+  .adresses p {
+    padding-bottom: 1em;
+  }
+
   .footer-copy {
     padding-top: 2em;
   }

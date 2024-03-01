@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="flex gap-4 pb-4 lg:pb-0">
                 <span className="flaticon-location"></span>
                 
-                <div>
+                <div className="adresses">
                   <p>Plot 5481, Libala road, Kalundu Lusaka, Zambia</p>
                   <p>12 Nourse Avenue, Epping Industrial, Western Cape, South Africa</p>
                   <p>14 Wrench Road, Isando, Gauteng, South Africa</p>
