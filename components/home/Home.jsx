@@ -132,7 +132,7 @@ const Home = () => {
             <h3 className="font-bold">Trading as DSC Logistics</h3>
             <Image
               src={expertise_2}
-              alt="Tractor "
+              alt="Tractor"
               quality={100}
               className="cover-img expertise-img-1"
               // blurDataURL={expertise_1.blurDataURL}
