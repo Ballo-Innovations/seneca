@@ -2,6 +2,11 @@
   height: 100%;
   object-fit: cover;
   object-position: left;
+  width: 45% !important;
+}
+
+.about-text-container {
+  width: 50%;
 }
 
 .shape {
@@ -26,6 +31,16 @@
   bottom: 0;
 }
 
+@media (width <= 768px){
+  .about-img {
+    width: 100% !important;
+  }
+
+  .about-text-container {
+    width: 50%;
+  }
+}
+
 @media (width <= 576px){
   #about-us {
     text-align: center;
@@ -46,5 +61,5 @@
 
   .about-text-container .main-heading {
     padding-bottom: 0.5em;
-  }
+  }  
 }
