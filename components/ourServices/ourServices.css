@@ -1,0 +1,35 @@
+.services-img {
+  height: fit-content;
+  object-fit: cover;
+  object-position: left;
+}
+
+.shape-9 {
+  position: absolute;
+  height: 5.5em;
+  width: 5.5em;
+  border-radius: 5px;
+  left: -7.5%;
+  top: -65%;
+}
+
+.shape-10 {
+  position: absolute;
+  height: 10em;
+  width: 3rem;
+  border-top-right-radius: 5px;
+  left: 0;
+  bottom: 0;
+}
+
+@media (width <= 576px){
+  #our-services .w-fit {
+    width: 100% !important;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .shape-9 {
+    left: 0;
+  }
+}

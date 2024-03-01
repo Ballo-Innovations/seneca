@@ -1,0 +1,50 @@
+.about-img {
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.shape {
+  background: var(--brand-green);
+}
+
+.shape-7 {
+  position: absolute;
+  height: 5.5em;
+  width: 5.5em;
+  border-radius: 5px;
+  right: -10%;
+  top: -65%;
+}
+
+.shape-8 {
+  position: absolute;
+  height: 4.5em;
+  width: 32.5%;
+  border-top-left-radius: 15px;
+  right: 0;
+  bottom: 0;
+}
+
+@media (width <= 576px){
+  #about-us {
+    text-align: center;
+  }
+
+  #about-us .w-fit {
+    width: 100% !important;
+  }
+
+  .shape-7 {
+    right: 10%;
+  }
+
+  .about-text-container {
+    padding: 0 0.5em !important;
+    padding-top: 2em !important;
+  }
+
+  .about-text-container .main-heading {
+    padding-bottom: 0.5em;
+  }
+}

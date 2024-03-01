@@ -1,0 +1,18 @@
+.row-contact span::before {
+  font-size: 2.5em;
+}
+
+footer {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+@media (width <= 576px){
+  #contact > div {
+    padding: 0 0.5em;
+  }
+
+  .footer-copy {
+    padding-top: 2em;
+  }
+}
