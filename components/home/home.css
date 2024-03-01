@@ -44,7 +44,7 @@
 .header-img {
   height: 95vh;
   background-size: cover;
-  width: 41.5% !important;
+  width: 80% !important;
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -67,6 +67,11 @@
   border-radius: 5px;
   right: 8.5em;
   top: -3.25em;
+}
+
+#commitment > .container,
+#why-us > .container {
+  max-width: min-content;
 }
 
 .commitment-text-container {
@@ -123,6 +128,15 @@
   top: -3.95em;
 }
 
+#expertise h3 {
+  font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.expertise-imge-container{
+  padding-top: 2em;
+}
+
 .expertise-img-1 {
   height: 80vh
 }
@@ -160,7 +174,7 @@
 
   .intro-text {
     font-size: 3em;
-    line-height: 0.5;
+    line-height: 0.7;
     font-weight: 500;
     padding: 0.5em 0;
     margin-bottom: -1.5em;
@@ -207,5 +221,13 @@
 
   #expertise {
     text-align: center !important;
+  }
+
+  .expertise-img-1 {
+    height: 65vh;
+  }
+
+  .expertise-img-2 {
+    height: 80vh;
   }
 }

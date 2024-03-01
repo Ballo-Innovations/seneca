@@ -75,7 +75,7 @@ const Home = () => {
 
       {/* Why us section */}
 
-      <div className="background-cover-center py-36" style={{ backgroundImage: `url(${fabric3.src})` }}>
+      <div id="why-us" className="background-cover-center py-36" style={{ backgroundImage: `url(${fabric3.src})` }}>
         <div className="flex flex-col-reverse flex-lg-row justify-center items-center">
           <div className="col-12 col-md-5">
             <Image
@@ -105,7 +105,7 @@ const Home = () => {
       {/* Expertise */}
 
       <div id="expertise" className="flex flex-col flex-lg-row text-black text-right py-36" style={{ backgroundImage: `url(${fabric4.src})` }}>
-        <div className="container col-12 col-md-6">
+        <div className="col-12 col-md-6">
           <div className="relative">
             <div className="shape shape-6" />
             <h1 className="main-heading">OUR EXPERTISE</h1>
@@ -127,7 +127,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 lg:pl-10 gap-4 flex items-end">
+        <div className="col-12 col-sm-6 lg:pl-10 gap-4 flex items-end expertise-imge-container">
           <div className="col-5 px-1 lg:px-0">
             <h3 className="font-bold">Trading as DSC Logistics</h3>
             <Image
