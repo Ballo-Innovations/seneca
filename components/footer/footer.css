@@ -7,13 +7,13 @@ footer {
   overflow: hidden;
 }
 
+.adresses p {
+  padding-bottom: 1em;
+}
+
 @media (width <= 576px){
   #contact > div {
     padding: 0 0.5em;
-  }
-
-  .adresses p {
-    padding-bottom: 1em;
   }
 
   .footer-copy {
