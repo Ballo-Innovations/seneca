@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import services_img from '@/public/images/services/Services-img.png'
+import services_img from '@/public/images/services/services-img.png'
 import fabric from '@/public/images/background/curvy-silk.jpg'
 import './ourServices.css'
 
