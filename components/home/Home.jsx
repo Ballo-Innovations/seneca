@@ -24,7 +24,13 @@ const Home = () => {
       {/* Intro section */}
 
       <div className="nav-padding background-cover pb-28" style={{ backgroundImage: `url(${fabric.src})` }}>
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} className="flex flex-column-reverse flex-lg-row">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }} 
+          transition={{ duration: 1 }} 
+          viewport={{ once: true }} 
+          className="flex flex-column-reverse flex-lg-row"
+        >
           {/* Header Image Container */}
           <div className="responsive-row md:mr-16 header-img relative" style={{ backgroundImage: `url(${header_img.src})` }} />
           
@@ -39,19 +45,13 @@ const Home = () => {
               />
             </div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }} 
-              transition={{ duration: 1.5, delay: 1 }} 
-              viewport={{ once: true }} 
-              className="text-4xl font-thin intro-text"
-            >
+            <div className="text-4xl font-thin intro-text">
               <p>YOUR</p>
               <p>AFRICAN</p>
               <p>TRADE</p>
               <p className="relative">PARTNER</p>
               <div className="d-sm-none shape mobile-shape-1" style={{ background: 'black' }} />
-            </motion.div>
+            </div>
           </div>
         </motion.div>
         <div className="shape shape-1" />
@@ -68,7 +68,7 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <div className="container col-12 col-md-6 inner-top-shadow">
-            <div className="px-10">
+            <div className="px-2 px-md-10">
               <div className="relative">
                 <motion.div
                  initial={{ opacity: 0, y:-50 }} 
@@ -82,7 +82,7 @@ const Home = () => {
                   whileInView={{ opacity: 1, y: 0 }} 
                   transition={{ duration: 1 }} 
                   viewport={{ once: true }} 
-                  className="main-heading text-right mt-36 mb-10"
+                  className="main-heading text-start text-md-end mt-36 mb-10"
                 >
                   OUR <br />COMMITMENT
                 </motion.h1>
@@ -228,7 +228,7 @@ const Home = () => {
             whileInView={{ opacity: 1 }} 
             transition={{ delay: 0.5, duration: 1 }} 
             viewport={{ once: true }}
-            className="lg:px-5"
+            className="px-3 px-md-2"
           >
             <div>
               <h2 className="sub-heading">YOUR AFRICAN SOURCING PARTNER</h2>

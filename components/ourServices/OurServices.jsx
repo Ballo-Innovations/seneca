@@ -46,11 +46,11 @@ const OurServices = () => {
               OUR SERVICES
             </motion.h1>
           </div>
-          <div className='font-light'>
+          <div className='font-light px-3 px-md-0'>
             <motion.p
               initial={{ opacity: 0, x:100 }} 
               whileInView={{ opacity: 1, x: 0 }} 
-              transition={{ delay: 0.75, duration: 0.5 }}
+              transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
               <span className="green-text font-semibold"><span className="font-semibold">SENECA ZAMBIA LIMITED</span></span> also serves the medium to heavy mining industrial construction and process industries.
@@ -59,7 +59,7 @@ const OurServices = () => {
             <motion.p
               initial={{ opacity: 0, x:100 }} 
               whileInView={{ opacity: 1, x: 0 }} 
-              transition={{ delay: 0.75, duration: 0.5 }}
+              transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
               We specialize in:
@@ -68,7 +68,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ delay: 1, duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Supply of mining equipment
@@ -77,7 +77,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ delay: 1, duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Underground Loaders
@@ -86,7 +86,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ delay: 1, duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Mining Drill Bits
@@ -95,7 +95,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ delay: 1, duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • 25kg - 2.5ton copper poly bags, valves and electicals
@@ -104,7 +104,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ delay: 1, duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Trackless equipment
@@ -113,7 +113,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Trackless parts
@@ -122,7 +122,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Trackless components (drifters, diffs, transmissions)
@@ -131,7 +131,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Hydraulic Power Packs
@@ -140,7 +140,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Conveyor Belts
@@ -149,7 +149,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Conveyor Belt Liners
@@ -158,7 +158,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Impact Liners
@@ -167,7 +167,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Knife Gate Valves
@@ -176,7 +176,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • Butterfly Valves
@@ -185,7 +185,7 @@ const OurServices = () => {
               <motion.p
                 initial={{ opacity: 0, x:100 }} 
                 whileInView={{ opacity: 1, x: 0 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 • LHD Slick Tyres
@@ -196,7 +196,7 @@ const OurServices = () => {
               <motion.div
                 initial={{ opacity: 0, scale:0 }} 
                 whileInView={{ opacity: 1, scale: 1 }} 
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 <div className="green-text"><span className="font-semibold">And also</span></div>
