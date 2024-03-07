@@ -1,3 +1,8 @@
+'use client'
+// Import Libraries
+import { motion } from "framer-motion"
+
+// Import Assets
 import './footer.css';
 import footer_bg from '@/public/images/background/footer-bg.jpg'
 
@@ -10,11 +15,16 @@ const Footer = () => {
               <div className="flex gap-4 pb-4 lg:pb-0">
                 <span className="flaticon-call"></span>
 
-                <div>
+                <motion.div
+                  initial={{ scale: 0.8 }} 
+                  whileInView={{scale: 1 }} 
+                  transition={{ duration: 0.5 }} 
+                  viewport={{ once: true }}
+                >
                   <p>+260 (211) 377 822/23</p>
                   <p>+260 (966) 193 449</p>
                   <p>+270 (837) 776 941</p>
-                </div>
+                </motion.div>
               </div>
             </div>
 
@@ -22,10 +32,15 @@ const Footer = () => {
               <div className="flex gap-4 pb-4 lg:pb-0">
                   <span className="flaticon-email"></span>
 
-                  <div>
+                  <motion.div
+                    initial={{ scale: 0.8 }} 
+                    whileInView={{scale: 1 }} 
+                    transition={{ duration: 0.5 }} 
+                    viewport={{ once: true }}
+                  >
                     <p>info@senecazambia.com</p>
                     <p>madiba@senecazambia.com</p>
-                  </div>
+                  </motion.div>
               </div>
 
             </div>
@@ -35,12 +50,18 @@ const Footer = () => {
               <div className="flex gap-4 pb-4 lg:pb-0">
                 <span className="flaticon-location"></span>
                 
-                <div className="adresses">
+                <motion.div
+                  initial={{ scale: 0.8 }} 
+                  whileInView={{scale: 1 }} 
+                  transition={{ duration: 0.5 }} 
+                  viewport={{ once: true }}
+                  className="adresses"
+                >
                   <p>Plot 5481, Libala road, Kalundu Lusaka, Zambia</p>
                   <p>12 Nourse Avenue, Epping Industrial, Western Cape, South Africa</p>
                   <p>14 Wrench Road, Isando, Gauteng, South Africa</p>
                   <p>262 Aberdare Drive, Phoenix Industrial Park, Kwa-Zulu Natal, South Africa</p>
-                </div>
+                </motion.div>
               </div>
             </div>
         </div>
