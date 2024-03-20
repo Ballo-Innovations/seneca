@@ -61,7 +61,7 @@
 }
 
 .mobile-dot {
-  display: none;
+  display: none !important;
 }
 
 @media (width <= 786px) {
@@ -81,6 +81,6 @@
   }
 
   .mobile-dot {
-    display: block;
+    display: block !important;
   }
 }
