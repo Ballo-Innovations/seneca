@@ -81,6 +81,6 @@
   }
 
   .mobile-dot {
-    display: block !important;
+    display: flex !important;
   }
 }
