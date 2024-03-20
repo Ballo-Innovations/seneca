@@ -4,7 +4,11 @@
 }
 
 .home-logo-image {
-  width: 40vw;
+  width: 30vw;
+}
+
+.dsc-logo-image {
+  width: 8vw;
 }
 
 .intro-text {
@@ -106,7 +110,6 @@
   position: absolute;
   height: 8em;
   width: 8em;
-  border-radius: 5px;
   right: 17.5%;
   top: -1.5em;
 }
@@ -158,6 +161,10 @@
 
 
 @media (width <= 992px){
+  .commitment-text-container {
+    text-align: left;
+  }
+
   .responsive-row {
     width: 100% !important;
   }
@@ -169,7 +176,15 @@
 
 @media (width <= 576px){
   .home-logo-image {
-    width: 288px;
+    width: 65%;
+  }
+
+  .dsc-logo-image {
+    width: 25%;
+  }
+
+  .logo-img-container {
+    justify-content: center;
   }
 
   .intro-text {

@@ -11,6 +11,21 @@ footer {
   padding-bottom: 1em;
 }
 
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-items a {
+  font-weight: 600 !important;
+}
+
+.footer-items a:hover {
+  color: var(--brand-text-color-green) !important;
+}
+
 @media (width <= 576px){
   #contact > div {
     padding: 0 0.5em;
@@ -18,5 +33,9 @@ footer {
 
   .footer-copy {
     padding-top: 2em;
+  }
+
+  .footer-items {
+    padding-bottom: 0.5em;
   }
 }

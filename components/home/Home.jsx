@@ -11,6 +11,8 @@ import why_choose_us_img from '@/public/images/header/header-4.png'
 import expertise_1 from '@/public/images/header/header-6.jpg'
 import expertise_2 from '@/public/images/about/about-img.png'
 import logo from '@/public/images/logo/logo-white.png'
+import logo_2 from '@/public/images/logo/logo-white-2.png'
+import DSC_logo from '@/public/images/logo/DSC-logo.png'
 import fabric from '@/public/images/background/curvy-silk.jpg'
 import fabric2 from '@/public/images/background/curvy-silk-2.jpg'
 import fabric3 from '@/public/images/background/curvy-fabric-green.png'
@@ -24,36 +26,65 @@ const Home = () => {
       {/* Intro section */}
 
       <div className="nav-padding background-cover pb-28" style={{ backgroundImage: `url(${fabric.src})` }}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }} 
-          transition={{ duration: 1 }} 
-          viewport={{ once: true }} 
-          className="flex flex-column-reverse flex-lg-row"
-        >
+        <div className="flex flex-column-reverse flex-lg-row">
           {/* Header Image Container */}
-          <div className="responsive-row md:mr-16 header-img relative" style={{ backgroundImage: `url(${header_img.src})` }} />
+          <motion.div
+            className="responsive-row md:mr-16 header-img relative" 
+            style={{ backgroundImage: `url(${header_img.src})` }}
+            initial={{ opacity: 0, x: -50  }}
+            whileInView={{ opacity: 1, x: 0 }} 
+            transition={{ delay: 1, duration: 1 }}
+            viewport={{ once: true }}
+          />
           
           <div className="container">
-            <div className="">
+            <motion.div
+              className="logo-img-container flex gap-6"
+              initial={{ opacity: 0, y:-20 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              transition={{ delay: 1.5, duration: 1 }} 
+              viewport={{ once: true }} 
+            >
               <Image
-                src={logo}
-                alt="Tractor "
+                src={logo_2}
+                alt="Seneca logo "
                 quality={100}
                 className="home-logo-image"
                 // blurDataURL={logo.blurDataURL}
               />
-            </div>
 
-            <div className="text-4xl font-thin intro-text">
+              <motion.div 
+                className="dsc-logo-image"
+                initial={{ opacity: 0, scale: 0, rotateY: 180  }}
+                whileInView={{ opacity: 1, scale: 1, rotateY: 0 }} 
+                transition={{ delay: 1.25, duration: 1.5, ease: "easeIn" }}
+                viewport={{ once: true }}
+              >
+                <Image
+                  src={DSC_logo}
+                  alt="DSC logo "
+                  quality={100}
+                  
+                  // blurDataURL={logo.blurDataURL}
+                />
+              </motion.div>
+            </motion.div>
+
+            <motion.div
+              className="text-4xl font-thin intro-text"
+              initial={{ opacity: 0, y: 10  }}
+              whileInView={{ opacity: 1, y: 0 }} 
+              transition={{ delay: 2.7, duration: 1.5, ease: "easeIn" }}
+              viewport={{ once: true }}
+            >
               <p>YOUR</p>
               <p>AFRICAN</p>
               <p>TRADE</p>
               <p className="relative">PARTNER</p>
               <div className="d-sm-none shape mobile-shape-1" style={{ background: 'black' }} />
-            </div>
+            </motion.div>
           </div>
-        </motion.div>
+        </div>
         <div className="shape shape-1" />
       </div>
 
@@ -87,9 +118,9 @@ const Home = () => {
                   OUR <br />COMMITMENT
                 </motion.h1>
               </div>
-              <div className="commitment-text-container pb-20">
+              <div className="commitment-text-container pb-20 text-justify">
                 <p><span className="font-semibold">SENECA COMMODITIES LIMITED</span> is committed to working toward a safe and sustainable future, helping to feed and connect a growing global population sustainably. Our commitment is to ensure:</p>         
-                <div className="pl-5">
+                <div className="pl-0 md:pl-5">
                   <motion.div
                     initial={{ opacity: 0, x:-100 }} 
                     whileInView={{ opacity: 1, x: 0 }} 
@@ -105,7 +136,7 @@ const Home = () => {
                     transition={{ delay: 0.75, duration: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <p>• <span className="font-semibold">Sustainability</span>: We seek to run our business responsibly with the highest level ofprudence.</p>
+                    <p>• <span className="font-semibold">Sustainability</span>: We seek to run our business responsibly with the highest level of prudence we can employ.</p>
                   </motion.div>
 
                   <motion.div
@@ -114,7 +145,7 @@ const Home = () => {
                     transition={{ delay: 0.75, duration: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <p>• Determination and <span className="green-text">staying on top</span> of the evolving <span className="green-text">needs of out customers</span>.In short,not just <span className="green-text">providing ahead</span>, but also <span className="green-text">thinking ahead</span>, so nobody is left behind!</p>
+                    <p>• Determination and <span className="green-text">staying on top</span> of the evolving <span className="green-text">needs of out customers</span>. In short, not just <span className="green-text">providing ahead</span>, but also <span className="green-text">thinking ahead</span>, so nobody is left behind!</p>
                   </motion.div>
 
                   <motion.div
@@ -130,7 +161,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-12 col-md-6 pl-10 commitment-img responsive-row" style={{ backgroundImage: `url(${commitment_img.src})` }} />
+          <div className="col-12 col-md-6 commitment-img responsive-row" style={{ backgroundImage: `url(${commitment_img.src})` }} />
           <div className="shape shape-3" />
         </motion.div>
       </div>

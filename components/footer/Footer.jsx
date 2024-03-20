@@ -58,7 +58,7 @@ const Footer = () => {
                   className="adresses"
                 >
                   <p>Plot 5481, Libala road, Kalundu Lusaka, Zambia</p>
-                  <p>12 Nourse Avenue, Epping Industrial, Western Cape, South Africa</p>
+                  <p>AS05, Grosvenor Square, Park Lane, Centure City, Cape Town, South Africa</p>
                   <p>14 Wrench Road, Isando, Gauteng, South Africa</p>
                   <p>262 Aberdare Drive, Phoenix Industrial Park, Kwa-Zulu Natal, South Africa</p>
                 </motion.div>
@@ -70,7 +70,10 @@ const Footer = () => {
       <div className="footer-bar">
         <div className="footer-copy">
           <div className="row">
-            <div className="col-md-6">
+            <div className="footer-items gap-1">
+              <div className="px-1 text-sm">
+                <span className="font-extralight">Designed & created by</span> <a className="text-white font-bold" href="https://balloinnovations.com/">Ballo Innovations</a>
+              </div>
               <div className="px-1 text-sm font-extralight">
                 &copy; 2024 SENECA COMMODITIES. All Rights Reserved
               </div>

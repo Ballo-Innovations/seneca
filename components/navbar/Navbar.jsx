@@ -59,8 +59,12 @@ const Navbar = () => {
             <Link href="/about-us" className="nav-link" onClick={() => setShowMenu(false)}>About Us</Link>
           </li>
 
-          <li className={`nav-item ${pathname === '/our-services' ?  'active': ''}`}>
-            <Link href="/our-services" className="nav-link" onClick={() => setShowMenu(false)}>Our Services</Link>
+          <li className={`nav-item ${pathname === '/warehousing' ?  'active': ''}`}>
+            <Link href="/warehousing" className="nav-link" onClick={() => setShowMenu(false)}>Warehousing</Link>
+          </li>
+
+          <li className={`nav-item ${pathname === '/team' ?  'active': ''}`}>
+            <Link href="/team" className="nav-link" onClick={() => setShowMenu(false)}>Our Team</Link>
           </li>
 
           <li className={`nav-item ${pathname === '/get-in-touch' ?  'active': ''}`}>

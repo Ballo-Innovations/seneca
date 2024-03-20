@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  transition: all ease-in-out 0.25s ;
+  transition: all ease-in-out 0.15s ;
 }
 
 .logo {
@@ -66,14 +66,12 @@
   }
 
   .nav-links {
-    height: 0;
     opacity: 0;
   }
 
   .openMenu {
     padding-top: 1em;
     opacity: 1 !important;
-    height: 100%;
   }
 
   #main-menu {
