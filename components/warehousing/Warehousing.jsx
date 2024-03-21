@@ -49,6 +49,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 0.4 }}
                 viewport={{ once: true }}
+                className="pt-3"
               >
                 • Diverse storage solutions
               </motion.p>
@@ -58,6 +59,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 0.6 }}
                 viewport={{ once: true }}
+                className="pt-3"
               >
                 • Custom compliance
               </motion.p>
@@ -67,6 +69,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 0.8 }}
                 viewport={{ once: true }}
+                className="pt-3"
               >
                 • Great location & external accessibility
               </motion.p>
@@ -76,6 +79,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 1 }}
                 viewport={{ once: true }}
+                className="pt-3"
               >
                 • Modern infrastructure
               </motion.p>
@@ -85,6 +89,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 1.2 }}
                 viewport={{ once: true }}
+                className="pt-3"
               >
                 • Value - added service
               </motion.p>
