@@ -1,5 +1,6 @@
 import Image from "next/image"
-import logo from '@/public/images/logo/logo-white.png'
+import logo_2 from '@/public/images/logo/logo-white-2.png'
+import DSC_logo from '@/public/images/logo/DSC-logo.png'
 import map from '@/public/images/icons/map_img.png'
 import './getInTouch.css'
 import Link from "next/link"
@@ -13,13 +14,28 @@ const GetInTouch = () => {
         <div className="row">
           <div className="col-lg-8 mb-30">
             <div className="footer-widget">
-              <div className="footer-logo">
-                <Image
-                  src={logo}
-                  alt="Tractor "
-                  quality={100}
-                  className="get-in-touch-logo"
-                />
+              <div className="logo-img-container flex gap-6">
+                <div className="flex flex-col  items-end">
+                  <Image
+                    src={logo_2}
+                    alt="Seneca logo "
+                    quality={100}
+                    className="home-logo-image"
+                    // blurDataURL={logo.blurDataURL}
+                  />
+
+                  <h1 className="dsc-logo-letters text-8xl">DSC</h1>
+                </div>
+
+                <div className="dsc-logo-image">
+                  <Image
+                    src={DSC_logo}
+                    alt="DSC logo "
+                    quality={100}
+                    
+                    // blurDataURL={logo.blurDataURL}
+                  />
+                </div>
               </div>
               <p className="mb-30 font-light"><strong>SENECA ZAMBIA LIMITED</strong> is a logistics and warehousing company that provides sourcing, logistics & trading services. With a speciality in agricultural commodities, mining and industrial usage(s), we strive to bring the highest quality products for consumers in partnership with some of the world&apos;s most successful and sophisticated retailers, wholesellers, importers, packagers, canners, brokers, growers & logistics companies.</p>
             </div>

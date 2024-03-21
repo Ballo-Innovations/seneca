@@ -10,7 +10,6 @@ import commitment_img from '@/public/images/header/header-3.png'
 import why_choose_us_img from '@/public/images/header/header-4.png'
 import expertise_1 from '@/public/images/header/header-6.jpg'
 import expertise_2 from '@/public/images/about/about-img.png'
-// import logo from '@/public/images/logo/logo-white.png'
 import logo_2 from '@/public/images/logo/logo-white-2.png'
 import DSC_logo from '@/public/images/logo/DSC-logo.png'
 import fabric from '@/public/images/background/curvy-silk.jpg'
@@ -78,7 +77,7 @@ const Home = () => {
               <motion.p 
                 initial={{ opacity: 0, y: 10  }}
                 whileInView={{ opacity: 1, y: 0 }} 
-                transition={{ delay: 2.7, duration: 1.25, ease: "easeIn" }}
+                transition={{ delay: 2.6, duration: 1, ease: "easeIn" }}
                 viewport={{ once: true }}
               >
                 YOUR
@@ -86,7 +85,7 @@ const Home = () => {
               <motion.p 
                 initial={{ opacity: 0, y: 10  }}
                 whileInView={{ opacity: 1, y: 0 }} 
-                transition={{ delay: 2.8, duration: 1.25, ease: "easeIn" }}
+                transition={{ delay: 2.8, duration: 1, ease: "easeIn" }}
                 viewport={{ once: true }}
               >
                 AFRICAN
@@ -94,7 +93,7 @@ const Home = () => {
               <motion.p 
                 initial={{ opacity: 0, y: 10  }}
                 whileInView={{ opacity: 1, y: 0 }} 
-                transition={{ delay: 2.9, duration: 1.25, ease: "easeIn" }}
+                transition={{ delay: 3, duration: 1, ease: "easeIn" }}
                 viewport={{ once: true }}
               >
                 TRADE
@@ -102,7 +101,7 @@ const Home = () => {
               <motion.p 
                 initial={{ opacity: 0, y: 10  }}
                 whileInView={{ opacity: 1, y: 0 }} 
-                transition={{ delay: 3, duration: 1.25, ease: "easeIn" }}
+                transition={{ delay: 3.2, duration: 1, ease: "easeIn" }}
                 viewport={{ once: true }}
                 className="relative"
               >

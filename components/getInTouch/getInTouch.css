@@ -2,6 +2,10 @@
   width: 50%;
 }
 
+#get-in-touch .logo-img-container {
+  transform: scale(0.8);
+}
+
 .line-footer {
   width: 50px;
   height: 3px;
@@ -54,6 +58,10 @@
 
   .footer-widget p {
     text-align: center;
-    padding-bottom: 3em;
+    padding: 1em 1em 3em;
+  }
+
+  #get-in-touch .logo-img-container div:first-child{
+    width: 150%;
   }
 }
