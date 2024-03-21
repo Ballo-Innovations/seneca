@@ -120,7 +120,7 @@ const Home = () => {
               </div>
               <div className="commitment-text-container pb-20 text-justify">
                 <p><span className="font-semibold">SENECA COMMODITIES LIMITED</span> is committed to working toward a safe and sustainable future, helping to feed and connect a growing global population sustainably. Our commitment is to ensure:</p>         
-                <div className="pl-0 md:pl-5">
+                <div className="pl-0 md:pl-5 commitment-paragraphs">
                   <motion.div
                     initial={{ opacity: 0, x:-100 }} 
                     whileInView={{ opacity: 1, x: 0 }} 

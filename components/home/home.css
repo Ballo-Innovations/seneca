@@ -159,6 +159,14 @@
   background: black;
 }
 
+#commitment .container.col-md-6 {
+  width: 50% !important;
+}
+
+.commitment-paragraphs p {
+  padding-top: 1em;
+}
+
 
 @media (width <= 992px){
   .commitment-text-container {
@@ -171,6 +179,12 @@
 
   .header-img {
     height: 20em;
+  }
+}
+
+@media (width <= 768px){
+  #commitment .container.col-12 {
+    width: 100% !important;
   }
 }
 
