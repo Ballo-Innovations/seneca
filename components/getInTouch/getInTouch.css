@@ -49,6 +49,19 @@
   text-decoration: none !important;
 }
 
+.home-logo-image {
+  width: 28vw;
+}
+
+.dsc-logo-letters {
+  font-size: 6.5vw;
+  font-weight: 600;
+}
+
+.dsc-logo-image {
+  width: 15vw;
+}
+
 @media (width <= 576px){
   .footer-logo {
     display: flex;
@@ -63,5 +76,19 @@
 
   #get-in-touch .logo-img-container div:first-child{
     width: 150%;
+  }
+
+  .home-logo-image {
+    width: 100%;
+  }
+
+  .dsc-logo-letters {
+    font-size: 15vw;
+    font-weight: 600;
+    width: fit-content;
+  }
+
+  .dsc-logo-image {
+    width: 90vw;
   }
 }

@@ -1,9 +1,9 @@
 import Image from "next/image"
+import Link from "next/link"
 import logo_2 from '@/public/images/logo/logo-white-2.png'
 import DSC_logo from '@/public/images/logo/DSC-logo.png'
 import map from '@/public/images/icons/map_img.png'
 import './getInTouch.css'
-import Link from "next/link"
 
 
 const GetInTouch = () => {
@@ -15,7 +15,7 @@ const GetInTouch = () => {
           <div className="col-lg-8 mb-30">
             <div className="footer-widget">
               <div className="logo-img-container flex gap-6">
-                <div className="flex flex-col  items-end">
+                <div className="flex flex-col items-end">
                   <Image
                     src={logo_2}
                     alt="Seneca logo "
