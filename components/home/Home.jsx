@@ -45,13 +45,17 @@ const Home = () => {
               transition={{ delay: 1.5, duration: 1 }} 
               viewport={{ once: true }} 
             >
-              <Image
-                src={logo_2}
-                alt="Seneca logo "
-                quality={100}
-                className="home-logo-image"
-                // blurDataURL={logo.blurDataURL}
-              />
+              <div className="flex flex-col  items-end">
+                <Image
+                  src={logo_2}
+                  alt="Seneca logo "
+                  quality={100}
+                  className="home-logo-image"
+                  // blurDataURL={logo.blurDataURL}
+                />
+
+                <h1 className="dsc-logo-letters text-8xl">DSC</h1>
+              </div>
 
               <motion.div 
                 className="dsc-logo-image"
@@ -253,7 +257,7 @@ const Home = () => {
             initial={{ scale: 0.9 }} 
             whileInView={{scale: 1 }} 
             transition={{ duration: 0.5 }} 
-            className="col-12 col-md-4 font-light px-3 pl-5 pt-3" 
+            className="col-12 col-md-4 font-light px-3 pl-5 pt-3 pt-md-0" 
             viewport={{ once: true }}
             style={{ zIndex: '2' }}
           >

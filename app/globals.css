@@ -62,7 +62,6 @@ body {
   font-weight: bold;
   color: var(--brand-green);
   margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 @layer utilities {
