@@ -6,6 +6,11 @@ import { motion } from "framer-motion"
 // Import Assets
 import './team.css'
 import fabric from '@/public/images/background/curvy-silk.jpg'
+import Image from "next/image"
+import mudenda from '@/public/images/team/person (1).jpeg'
+import Sumehn from '@/public/images/team/person (2).jpeg'
+import Ash from '@/public/images/team/person (3).jpeg'
+import Reece  from '@/public/images/team/person (4).jpeg'
 
 const Team = () => {
   return (
@@ -38,26 +43,49 @@ const Team = () => {
         <div className="team-content">
           <div className="shape shape-12" />
           <div className='row'>
-            <div className='team-member col-4'>
-              <p className='font-bold'>Sumehn Sewraj</p>
+            <div className='team-member relative col-4'>
+                <Image
+                  src={Sumehn}
+                  alt="Sumehn Sewraj"
+                  quality={100}
+                />
+                <div className="team-shape" />
+              <p className='name'>Sumehn Sewraj</p>
               <p>CEO, South Africa</p>
             </div>
-            <span className='col-3'>•</span>
-            <div className='team-member col-4'>
-              <p className='font-bold'>Maybin Mudenda</p>
+            <span className='col-3' />
+            <div className='team-member relative col-4'>
+                <Image
+                  src={mudenda}
+                  alt="Maybin Mudenda"
+                  quality={100}
+                />
+                <div className="team-shape team-shape-2" />
+              <p className='name'>Maybin Mudenda</p>
               <p>CEO, Zambia</p>
             </div>
           </div>
 
           <div className='row'>
-            <span className='col-3 mobile-dot'>•</span>
-            <div className='team-member col-4'>
-              <p className='font-bold'>Ash Sewraj</p>
-              <p>Chairman</p>
+            <div className='team-member relative col-4'>
+              <Image
+                src={Ash}
+                alt="Ash Sewraj"
+                quality={100}
+              />
+              <div className="team-shape team-shape-2" />
+              <p className='name'>Ash Sewraj</p>
+              <p>Group Chairman, South Africa/Zambia</p>
             </div>
-            <span className='col-3'>•</span>
-            <div className='team-member col-4'>
-              <p className='font-bold'>Reece Currin</p>
+            <span className='col-3' />
+            <div className='team-member relative col-4'>
+              <Image
+                src={Reece}
+                alt="Reece Currin"
+                quality={100}
+              />
+              <div className="team-shape team-shape-3" />
+              <p className='name'>Reece Currin</p>
               <p>Executive Director, South Africa/Zambia</p>
             </div>
           </div>
