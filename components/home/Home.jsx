@@ -10,7 +10,7 @@ import commitment_img from '@/public/images/header/header-3.png'
 import why_choose_us_img from '@/public/images/header/header-4.png'
 import expertise_1 from '@/public/images/header/header-6.jpg'
 import expertise_2 from '@/public/images/about/about-img.png'
-import logo from '@/public/images/logo/logo-white.png'
+// import logo from '@/public/images/logo/logo-white.png'
 import logo_2 from '@/public/images/logo/logo-white-2.png'
 import DSC_logo from '@/public/images/logo/DSC-logo.png'
 import fabric from '@/public/images/background/curvy-silk.jpg'
@@ -70,19 +70,49 @@ const Home = () => {
               </motion.div>
             </motion.div>
 
-            <motion.div
-              className="text-4xl font-thin intro-text"
-              initial={{ opacity: 0, y: 10  }}
-              whileInView={{ opacity: 1, y: 0 }} 
-              transition={{ delay: 2.7, duration: 1.5, ease: "easeIn" }}
-              viewport={{ once: true }}
-            >
-              <p>YOUR</p>
-              <p>AFRICAN</p>
-              <p>TRADE</p>
-              <p className="relative">PARTNER</p>
-              <div className="d-sm-none shape mobile-shape-1" style={{ background: 'black' }} />
-            </motion.div>
+            <div className="text-4xl font-thin intro-text">
+              <motion.p 
+                initial={{ opacity: 0, y: 10  }}
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ delay: 2.7, duration: 1.25, ease: "easeIn" }}
+                viewport={{ once: true }}
+              >
+                YOUR
+              </motion.p>
+              <motion.p 
+                initial={{ opacity: 0, y: 10  }}
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ delay: 2.8, duration: 1.25, ease: "easeIn" }}
+                viewport={{ once: true }}
+              >
+                AFRICAN
+              </motion.p>
+              <motion.p 
+                initial={{ opacity: 0, y: 10  }}
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ delay: 2.9, duration: 1.25, ease: "easeIn" }}
+                viewport={{ once: true }}
+              >
+                TRADE
+              </motion.p>
+              <motion.p 
+                initial={{ opacity: 0, y: 10  }}
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ delay: 3, duration: 1.25, ease: "easeIn" }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                PARTNER
+              </motion.p>
+              <motion.div 
+                initial={{ opacity: 0, x: 50  }}
+                whileInView={{ opacity: 1, x: 0 }} 
+                transition={{ delay: 2.25, duration: 1, ease: "easeIn" }}
+                viewport={{ once: true }}
+                className="d-sm-none shape mobile-shape-1"
+                style={{ background: 'black' }}
+              />
+            </div>
           </div>
         </div>
         <div className="shape shape-1" />
@@ -223,7 +253,7 @@ const Home = () => {
             initial={{ scale: 0.9 }} 
             whileInView={{scale: 1 }} 
             transition={{ duration: 0.5 }} 
-            className="col-12 col-md-4 font-light px-3 pl-5" 
+            className="col-12 col-md-4 font-light px-3 pl-5 pt-3" 
             viewport={{ once: true }}
             style={{ zIndex: '2' }}
           >
@@ -263,7 +293,7 @@ const Home = () => {
           >
             <div>
               <h2 className="sub-heading">YOUR AFRICAN SOURCING PARTNER</h2>
-              <p font>Through our vast network of collaborators, we source the best quality commodity products that are of the highest standards and at commercially viably cost.</p>
+              <p>Through our vast network of collaborators, we source the best quality commodity products that are of the highest standards and at commercially viably cost.</p>
             </div>
 
             <div>
