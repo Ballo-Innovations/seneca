@@ -30,7 +30,7 @@ const Team = () => {
           viewport={{ once: true }}
           className="main-heading"
         >
-          OUR <br/> MANAGEMENT <br/> TEAM
+          OUR <br/> EXECUTIVE <br/> TEAM
         </motion.h1>
       </div>
       <motion.div
@@ -44,14 +44,14 @@ const Team = () => {
           <div className="shape shape-12" />
           <div className='row'>
             <div className='team-member relative col-4'>
-                <Image
-                  src={Sumehn}
-                  alt="Sumehn Sewraj"
-                  quality={100}
-                />
-                <div className="team-shape" />
-              <p className='name'>Sumehn Sewraj</p>
-              <p>CEO, South Africa</p>
+              <Image
+                src={Ash}
+                alt="Ash Sewraj"
+                quality={100}
+              />
+              <div className="team-shape" />
+              <p className='name'>Ash Sewraj</p>
+              <p>Group Chairman, South Africa/Zambia</p>
             </div>
             <span className='col-3' />
             <div className='team-member relative col-4'>
@@ -60,7 +60,7 @@ const Team = () => {
                   alt="Maybin Mudenda"
                   quality={100}
                 />
-                <div className="team-shape team-shape-2" />
+              <div className="team-shape team-shape-2" />
               <p className='name'>Maybin Mudenda</p>
               <p>CEO, Zambia</p>
             </div>
@@ -69,13 +69,13 @@ const Team = () => {
           <div className='row'>
             <div className='team-member relative col-4'>
               <Image
-                src={Ash}
-                alt="Ash Sewraj"
+                src={Sumehn}
+                alt="Sumehn Sewraj"
                 quality={100}
               />
               <div className="team-shape team-shape-2" />
-              <p className='name'>Ash Sewraj</p>
-              <p>Group Chairman, South Africa/Zambia</p>
+              <p className='name'>Sumehn Sewraj</p>
+              <p>CEO, South Africa</p>
             </div>
             <span className='col-3' />
             <div className='team-member relative col-4'>
@@ -89,7 +89,6 @@ const Team = () => {
               <p>Executive Director, South Africa/Zambia</p>
             </div>
           </div>
-
         </div>
       </motion.div>
     </div>
