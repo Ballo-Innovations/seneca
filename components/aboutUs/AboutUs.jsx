@@ -5,13 +5,13 @@ import { motion } from "framer-motion"
 import Image from 'next/image';
 
 // Import Assets
-import about_img from '@/public/images/about/about-img.png'
-import fabric from '@/public/images/background/curvy-silk.jpg'
+import about_img from '@/public/images/about/about-img-2.jpeg'
+import fabric from '@/public/images/background/curvy-fabric-light.png'
 import './aboutUs.css';
 
 const AboutUs = () => {
   return (
-    <div id='about-us' className="nav-padding border-b relative" style={{ backgroundImage: `url(${fabric.src})` }}>
+    <div id='about-us' className="nav-padding border-b relative text-black text-[1.1rem]" style={{ backgroundImage: `url(${fabric.src})` }}>
       <div className="flex flex-col-reverse flex-lg-row pb-32">
         <motion.div 
           initial={{ opacity: 0, x:-100 }} 
@@ -24,10 +24,10 @@ const AboutUs = () => {
             src={about_img}
             alt="Tractor "
             quality={100}
-            className="cover-img about-img"
+            className="cover-img about-img rounded-r-md"
           />
         </motion.div>
-        <div className="container about-text-container col-12 col-md-6 py-20 font-light">
+        <div className="container about-text-container col-12 col-md-6 py-20">
           <div className="relative w-fit mb-10">
             <motion.div 
               initial={{ opacity: 0, x:100 }} 
@@ -54,7 +54,7 @@ const AboutUs = () => {
             viewport={{ once: true }}
             className='font-normal'
           >
-            <span className="green-text font-semibold"><span className="font-semibold">SENECA ZAMBIA LIMITED</span></span> is a logistics and warehousing company that provides sourcing, logistics & trading services. With a speciality in agricultural commodities, mining, and industrial usage(s), we strive to provide the highest quality products for consumers in partnership with some of the world&apos;s most successful and sophisticated retailers, wholesalers, importers, packagers, canners, brokers, growers & logisticscompanies.
+            <span className="green-text font-semibold"><span className="font-semibold">SENECA ZAMBIA LIMITED</span></span> is a mining solutions and commodities supply company, specializing in the sourcing and supply of metals, mining, and industrial commodities. With a focus on Nickel, Cobalt, Copper, and other essential minerals, we support mining operations with high-quality equipment, materials, and project solutions.
           </motion.p>
 
           <br />
@@ -65,7 +65,7 @@ const AboutUs = () => {
             transition={{ delay: 1, duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Our vast experience in commodities trading has helped us forge alliances within the value chain with key stakeholders like <strong>DSC Logistics</strong> that are highly respected for their outstanding performance and operation processes - from due diligence through to management of business plan execution and investment realization.
+            Backed by years of experience in commodities trading, we have built strong alliances within the industry to ensure seamless supply chains for mining and construction projects. Our expertise allows us to provide reliable, efficient, and tailored solutions that drive operational success.
           </motion.p>
 
           <br />
@@ -76,9 +76,8 @@ const AboutUs = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            As a trusted partner, we take pride in building lasting relationships with our valued customers and driving their growth and success in this ever-evolving industry.
+            As a trusted partner, we take pride in fostering long-term relationships and empowering our clients to thrive in the evolving mining sector.
           </motion.p>
-          
         </div>
       </div>
       <motion.div

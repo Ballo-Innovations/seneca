@@ -1,9 +1,6 @@
 #navbar {
   z-index: 10;
-  padding: 1.5em 4em;
-  position: fixed;
-  top: 0;
-  width: 100vw;
+  padding: 1em 4em;
   transition: all ease-in-out 0.15s ;
 }
 
@@ -81,7 +78,7 @@
 
 @media (width <= 576px) {
   #navbar {
-    padding: 1.5em 1em;
+    padding:0.5em 1em;
   }
 
   .openMenu {

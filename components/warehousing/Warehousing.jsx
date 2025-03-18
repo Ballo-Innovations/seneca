@@ -6,14 +6,14 @@ import Image from 'next/image'
 
 // Import Assets
 import services_img from '@/public/images/services/seneca picture.png'
-import fabric from '@/public/images/background/curvy-silk.jpg'
+import fabric from '@/public/images/background/curvy-fabric-light.png'
 import './warehousing.css'
 
 const OurServices = () => {
   return (
-    <div id='our-services' className='nav-padding border-b relative' style={{ backgroundImage: `url(${fabric.src})` }}>
-      <div className="flex pt-10" id="warehousing-container">
-        <div className="px-10 col-12 col-md-6 pb-20 pt-10 relative">
+    <div id='our-services' className='nav-padding border-b relative text-black' style={{ backgroundImage: `url(${fabric.src})` }}>
+      <div className="flex" id="warehousing-container">
+        <div className="px-10 col-12 col-md-6 pb-20 md:pt-20 relative">
           <div className="shape moile-shape-10" />
           <div className="relative w-fit mb-10">
             <motion.div
@@ -33,7 +33,7 @@ const OurServices = () => {
               OUR BONDED WAREHOUSING
             </motion.h1>
           </div>
-          <div className='font-light px-3 px-md-5'>
+          <div className='px-3 px-md-5 md:ml-10 text-[1.1rem]'>
             <motion.p
               initial={{ opacity: 0, x:100 }} 
               whileInView={{ opacity: 1, x: 0 }} 
@@ -49,7 +49,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="pt-3"
+                className="md:pt-3 font-medium"
               >
                 • Diverse storage solutions
               </motion.p>
@@ -59,7 +59,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 0.6 }}
                 viewport={{ once: true }}
-                className="pt-3"
+                className="md:pt-3"
               >
                 • Custom compliance
               </motion.p>
@@ -69,7 +69,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="pt-3"
+                className="md:pt-3"
               >
                 • Great location & external accessibility
               </motion.p>
@@ -79,7 +79,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 1 }}
                 viewport={{ once: true }}
-                className="pt-3"
+                className="md:pt-3"
               >
                 • Modern infrastructure
               </motion.p>
@@ -89,7 +89,7 @@ const OurServices = () => {
                 whileInView={{ opacity: 1, x: 0 }} 
                 transition={{ duration: 1, delay: 1.2 }}
                 viewport={{ once: true }}
-                className="pt-3"
+                className="md:pt-3"
               >
                 • Value - added service
               </motion.p>
@@ -106,7 +106,7 @@ const OurServices = () => {
             src={services_img}
             alt="Tractor "
             quality={100}
-            className="cover-img services-img"
+            className="cover-img services-img rounded-tl-md"
           />
         </motion.div>
       </div>

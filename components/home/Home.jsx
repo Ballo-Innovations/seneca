@@ -6,11 +6,12 @@ import { motion } from "framer-motion"
 
 // Import assets
 import header_img from '@/public/images/header/header-1.png'
-import commitment_img from '@/public/images/header/header-3.png'
+import commitment_img from '@/public/images/header/header-3.jpeg'
 import why_choose_us_img from '@/public/images/header/header-4.png'
-import expertise_1 from '@/public/images/header/header-6.jpg'
-import expertise_2 from '@/public/images/about/about-img.png'
+import expertise_1 from '@/public/images/services/seneca picture.png'
+import expertise_2 from '@/public/images/header/header-7.jpeg'
 import logo_2 from '@/public/images/logo/logo-white-2.png'
+import logo from '@/public/images/logo/logo.png'
 import DSC_logo from '@/public/images/logo/DSC-logo.png'
 import fabric from '@/public/images/background/curvy-silk.jpg'
 import fabric2 from '@/public/images/background/curvy-silk-2.jpg'
@@ -24,17 +25,25 @@ const Home = () => {
 
       {/* Intro section */}
 
-      <div className="nav-padding background-cover pb-28" style={{ backgroundImage: `url(${fabric.src})` }}>
+      <div className="nav-padding background-cover pb-20 text-black" style={{ backgroundImage: `url(${fabric4.src})` }}>
         <div className="flex flex-column-reverse flex-lg-row">
           {/* Header Image Container */}
           <motion.div
-            className="responsive-row md:mr-16 header-img relative" 
-            style={{ backgroundImage: `url(${header_img.src})` }}
+            className="responsive-row md:mr-16 header-img relative rounded-r-md"               
             initial={{ opacity: 0, x: -50  }}
             whileInView={{ opacity: 1, x: 0 }} 
             transition={{ delay: 1, duration: 1 }}
             viewport={{ once: true }}
-          />
+          >
+            <video
+              className="absolute left-0 top-0 w-full h-full object-cover rounded-lg z-0"
+              muted
+              loop
+              autoPlay
+              playsInline
+              src="/videos/hero-vid.mp4"
+            />
+          </motion.div>
           
           <div className="container">
             <motion.div
@@ -44,19 +53,19 @@ const Home = () => {
               transition={{ delay: 1.5, duration: 1 }} 
               viewport={{ once: true }} 
             >
-              <div className="flex flex-col  items-end">
+              <div className="flex flex-col items-end mt-20">
                 <Image
-                  src={logo_2}
+                  src={logo}
                   alt="Seneca logo "
                   quality={100}
                   className="home-logo-image"
                   // blurDataURL={logo.blurDataURL}
-                />
+                />              
 
-                <h1 className="dsc-logo-letters text-8xl">DSC</h1>
+                {/* <h1 className="dsc-logo-letters text-8xl">DSC</h1> */}
               </div>
 
-              <motion.div 
+              {/* <motion.div 
                 className="dsc-logo-image"
                 initial={{ opacity: 0, scale: 0, rotateY: 180  }}
                 whileInView={{ opacity: 1, scale: 1, rotateY: 0 }} 
@@ -70,10 +79,10 @@ const Home = () => {
                   
                   // blurDataURL={logo.blurDataURL}
                 />
-              </motion.div>
+              </motion.div> */}
             </motion.div>
 
-            <div className="text-4xl font-thin intro-text">
+            <div className="text-4xl font-extrabold intro-text">
               <motion.p 
                 initial={{ opacity: 0, y: 10  }}
                 whileInView={{ opacity: 1, y: 0 }} 
@@ -123,7 +132,7 @@ const Home = () => {
 
       {/* Commitment section */}
 
-      <div id="commitment" style={{ backgroundImage: `url(${fabric2.src})` }}>
+      <div id="commitment" style={{ backgroundImage: `url(${fabric4.src})` }}>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -131,7 +140,7 @@ const Home = () => {
           className="flex flex-col flex-lg-row relative"
           viewport={{ once: true }}
         >
-          <div className="container col-12 col-md-6 inner-top-shadow">
+          <div className="container col-12 col-md-6 text-black">
             <div className="px-2 px-md-10">
               <div className="relative">
                 <motion.div
@@ -152,7 +161,7 @@ const Home = () => {
                 </motion.h1>
               </div>
               <div className="commitment-text-container pb-20 text-justify">
-                <p><span className="font-semibold">SENECA COMMODITIES LIMITED</span> is committed to working toward a safe and sustainable future, helping to feed and connect a growing global population sustainably. Our commitment is to ensure:</p>         
+                <p><span className="font-semibold">SENECA COMMODITIES LIMITED</span>  is committed to working toward a safe and sustainable future, helping to feed and connect a growing global population sustainably. Our commitment is to ensure:</p>         
                 <div className="pl-0 md:pl-5 commitment-paragraphs">
                   <motion.div
                     initial={{ opacity: 0, x:-100 }} 
@@ -160,7 +169,7 @@ const Home = () => {
                     transition={{ delay: 0.75, duration: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <p>• <span className="font-semibold">Equitability</span>: We seek to create value that is fairly realized by all in our value chain.</p>
+                    <p>• <span className="font-semibold">Equitability</span>: We seek to create value that is fairly realised by all in our value chain.</p>
                   </motion.div>
 
                   <motion.div
@@ -187,14 +196,14 @@ const Home = () => {
                     transition={{ delay: 0.75, duration: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <p>• <span className="font-semibold">Maintain Integrity</span>: May we never lose sight of where we came from or how we got to where we are. As the eyes is the worlds view to your soul, such is your view to the sole of the world. It is not what we do that counts, but rather how we do it. Our guidance - each one of us has equal importance in life.</p>
+                    <p>• <span className="font-semibold">Maintain Integrity</span>: May we never loose sight of where we came from or how we got to where we are. It is not just what we do that counts, but also how we do it.</p>
                   </motion.div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="col-12 col-md-6 commitment-img responsive-row" style={{ backgroundImage: `url(${commitment_img.src})` }} />
+          <div className="col-12 col-md-6 commitment-img responsive-row rounded-tl-md" style={{ backgroundImage: `url(${commitment_img.src})` }} />
           <div className="shape shape-3" />
         </motion.div>
       </div>
@@ -214,17 +223,17 @@ const Home = () => {
               src={why_choose_us_img}
               alt="Tractor "
               quality={100}
-              className="cover-img why-us-img"
+              className="cover-img why-us-img rounded-r-md"
             />
           </motion.div>
           <div className="container col-12 col-md-7 flex items-end">
-            <div className="relative mt-44 why-us-heading">
+            <div className="relative mt-44  md:mt-20 why-us-heading">
               <motion.h1 
                 initial={{ opacity: 0, y:100 }} 
                 whileInView={{ opacity: 1, y: 0 }} 
                 transition={{ duration: 1 }} 
                 viewport={{ once: true }}
-                className="ml-20 main-heading"
+                className="ml-20 main-heading why-us"
               >    
                 WHY <br/> CHOOSE <br/> US?
               </motion.h1>
@@ -238,7 +247,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col flex-lg-row pt-16">
+        <div className="flex flex-col flex-lg-row pt-16 text-[1.15rem]">
           <p className="col-12 col-md-3 relative">
               <div className="shape shape-5" />
           </p>
@@ -250,7 +259,7 @@ const Home = () => {
             className="col-12 col-md-4 font-light px-3 lg:px-5" 
             style={{ zIndex: '2' }}
           >
-            We are independent consultants providing world-class agriculture, geological and mining services in mineral resource management
+            We are independent consultants providing world-class agricultural, geological and mining services in mineral resource management
           </motion.p>
           <motion.p 
             initial={{ scale: 0.9 }} 
@@ -267,8 +276,8 @@ const Home = () => {
 
       {/* Expertise */}
 
-      <div id="expertise" className="flex flex-col flex-lg-row text-black text-right py-36" style={{ backgroundImage: `url(${fabric4.src})` }}>
-        <div className="col-12 col-md-6">
+      <div id="expertise" className="flex flex-col flex-lg-row text-black text-right pt-36 pb-20" style={{ backgroundImage: `url(${fabric4.src})` }}>
+        <div className="col-12 col-md-6 text-[1.1rem]">
           <div className="relative">
             <motion.div
               initial={{ opacity: 0, x:100 }}
@@ -296,17 +305,17 @@ const Home = () => {
           >
             <div>
               <h2 className="sub-heading">YOUR AFRICAN SOURCING PARTNER</h2>
-              <p>Through our vast network of collaborators, we source the best quality commodity products that are of the highest standards and at commercially viably cost.</p>
+              <p>Through our vast network of collaborators, we source the best quality commodity products that are of the highest standards and at commercially viable costs.</p>
             </div>
 
             <div>
-              <h2 className="sub-heading">YOUR AFRICAN LOGISTICS PARTNER</h2>
-              <p>To streamline cross-border logstics, <strong>SENECA</strong> collaborates with esteemed partner <strong>DSC Logistics</strong> from South Africa. Together, we offer comprehensive solutions for the seamless transit of goods and commodities. Leveraging expertise and strategic infrastructure, our partnership ensures efficient handling and timely delivery accross the region. Trust us to optimise your supply chain for success</p>
+              <h2 className="sub-heading">YOUR AFRICAN MINING PARTNER</h2>
+              <p>To strengthen mining operations across the region, SENECA collaborates with esteemed partner RTT Legacy Africa. Together, we provide specialized mining solutions, including the supply of essential equipment, metals, and industrial commodities. Leveraging our combined expertise and strategic networks, we ensure efficient sourcing, reliable supply chains, and seamless project execution. Trust us to power your mining ventures with quality, efficiency, and industryleading support.</p>
             </div>
 
             <div>
               <h2 className="sub-heading">YOUR AFRICAN WAREHOUSING PARTNER</h2>
-              <p>Begin your seamless journey with us in tandem with <strong>DSC Logistics</strong>, our trusted partner. Together, we provide top-tier warehousing facilities tailored for in-transit goods and commodities. With  strategic locations and advanced logistics capabilities. With strategic locations and advanced logistics capabilities, we ensure smooth handling and secure storage throughout the transit process. Experience reliability and efficiency redifined in cross-border logistics.</p>
+              <p>Begin your seamless journey with us. Together, we provide top-tier warehousing facilities tailored for in-transit goods and commodities. With strategic locations and advanced logistics capabilities, we ensure smooth handling and secure storage throughout the transit process. Experience reliability and efficiency redefined in cross-border logistics.</p>
             </div>
           </motion.div>
         </div>
@@ -315,15 +324,15 @@ const Home = () => {
           whileInView={{ opacity: 1 }} 
           transition={{ delay: 1, duration: 1 }} 
           viewport={{ once: true }}
-          className="col-12 col-sm-6 lg:pl-10 gap-4 flex items-end expertise-imge-container"
+          className="col-12 col-sm-6 lg:pl-10 gap-3 flex items-end expertise-imge-container"
         >
           <div className="col-5 px-1 lg:px-0">
-            <h3 className="font-bold text-center">Trading as DSC Logistics</h3>
+            {/* <h3 className="font-bold text-center">Trading as DSC Logistics</h3> */}
             <Image
               src={expertise_2}
               alt="Tractor"
               quality={100}
-              className="cover-img expertise-img-1"
+              className="cover-img expertise-img-1 object-center rounded-md"
               // blurDataURL={expertise_1.blurDataURL}
               style={{ objectPosition: 'left' }}
             />
@@ -332,7 +341,7 @@ const Home = () => {
             src={expertise_1}
             alt="Tractor"
             quality={100}
-            className="cover-img expertise-img-2 col-7"
+            className="cover-img expertise-img-2 col-7 rounded-l-md"
             // blurDataURL={expertise_2.blurDataURL}
           />
         </motion.div>
