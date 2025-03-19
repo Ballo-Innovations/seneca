@@ -29,7 +29,7 @@ const Home = () => {
         <div className="flex flex-column flex-lg-row">
           {/* Header Image Container */}
           <motion.div
-            className="responsive-row md:mr-16 header-img relative rounded-r-md brightness-150"               
+            className="responsive-row md:mr-16 header-img relative rounded-r-md"               
             initial={{ opacity: 0, x: -50  }}
             whileInView={{ opacity: 1, x: 0 }} 
             transition={{ delay: 1, duration: 1 }}
