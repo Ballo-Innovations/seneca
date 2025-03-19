@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <header className='flex justify-center items-center w-screen fixed top-1 md:top-3 pl-2 pr-2 md:pl-5 md:pr-10 left-0 z-50'>    
-      <nav id='navbar' className={`flex w-full justify-between items-center flex-col flex-lg-row rounded-lg rounded-full ${(scrolled || showMenu) ? 'bg-black' : 'bg-black'}`}>
+      <nav id='navbar' className={`flex w-full justify-between items-center flex-col flex-lg-row rounded-lg md:rounded-full ${(scrolled || showMenu) ? 'bg-black' : 'bg-black'}`}>
         <div className='logo-container flex justify-between items-center'>
           <Link href="/" className='flex w-fit no-underline'>
             {/* <Image

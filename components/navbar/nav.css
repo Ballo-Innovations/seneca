@@ -18,7 +18,7 @@
 
 .nav-menu .nav-item.active .nav-link,
 .nav-menu .nav-item:hover .nav-link {
-    color: var(--brand-text-color-green);
+    color: #1c9d2a;
 }
 
 .nav-menu .nav-item .nav-link:before {
