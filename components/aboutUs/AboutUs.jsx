@@ -73,7 +73,7 @@ const AboutUs = () => {
           <motion.p
             initial={{ opacity: 0, x:100 }} 
             whileInView={{ opacity: 1, x: 0 }} 
-            transition={{ duration: 0.5 }}
+            transition={{ delay: 1.25, duration: 0.5 }}
             viewport={{ once: true }}
           >
             As a trusted partner, we take pride in fostering long-term relationships and empowering our clients to thrive in the evolving mining sector.
@@ -85,7 +85,7 @@ const AboutUs = () => {
           <motion.p
             initial={{ opacity: 0, x:100 }} 
             whileInView={{ opacity: 1, x: 0 }} 
-            transition={{ duration: 0.5 }}
+            transition={{ delay: 0.75, duration: 0.5 }}
             viewport={{ once: true }}
           >            
             For more information on the joint venture, view article <a href="https://panafricanvisions.com/2025/03/seneca-commodities-zambia-and-lvc-global-forge-jv-to-optimize-critical-mineral-trading-in-emerging-frontier-markets/" target="_blank" className="green-text font-semibold"><span className="font-semibold">here</span></a>
