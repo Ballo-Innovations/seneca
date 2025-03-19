@@ -26,10 +26,10 @@ const Home = () => {
       {/* Intro section */}
 
       <div className="nav-padding background-cover pb-20 text-black" style={{ backgroundImage: `url(${fabric4.src})` }}>
-        <div className="flex flex-column-reverse flex-lg-row">
+        <div className="flex flex-column flex-lg-row">
           {/* Header Image Container */}
           <motion.div
-            className="responsive-row md:mr-16 header-img relative rounded-r-md"               
+            className="responsive-row md:mr-16 header-img relative rounded-r-md brightness-150"               
             initial={{ opacity: 0, x: -50  }}
             whileInView={{ opacity: 1, x: 0 }} 
             transition={{ delay: 1, duration: 1 }}
@@ -53,12 +53,12 @@ const Home = () => {
               transition={{ delay: 1.5, duration: 1 }} 
               viewport={{ once: true }} 
             >
-              <div className="flex flex-col items-end mt-20">
+              <div className="flex flex-col items-end mt-16 md:mt-20">
                 <Image
                   src={logo}
                   alt="Seneca logo "
                   quality={100}
-                  className="home-logo-image"
+                  className="home-logo-image relative z-[5]"
                   // blurDataURL={logo.blurDataURL}
                 />              
 
@@ -82,7 +82,7 @@ const Home = () => {
               </motion.div> */}
             </motion.div>
 
-            <div className="text-4xl font-extrabold intro-text">
+            <div className="text-6xl md:text-4xl font-extrabold intro-text">
               <motion.p 
                 initial={{ opacity: 0, y: 10  }}
                 whileInView={{ opacity: 1, y: 0 }} 
