@@ -30,6 +30,10 @@
   bottom: 0;
 }
 
+#about-us .main-heading {
+  color: black !important;
+}
+
 @media (width <= 768px){
   .about-img {
     width: 100% !important;
@@ -61,4 +65,8 @@
   .about-text-container .main-heading {
     padding-bottom: 0.5em;
   }  
+
+  #about-us .main-heading {
+    color: white !important;
+  }
 }
