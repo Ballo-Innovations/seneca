@@ -12,13 +12,27 @@ import './aboutUs.css';
 const AboutUs = () => {
   return (
     <div id='about-us' className="nav-padding border-b relative text-black text-[1.1rem]" style={{ backgroundImage: `url(${fabric.src})` }}>
-      <div className="flex flex-col-reverse flex-lg-row pb-32">
+      <motion.div 
+          initial={{ opacity: 0, x:-100 }} 
+          whileInView={{ opacity: 1, x: 0 }} 
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="my-5 absolute top-[-3rem] left-0 z-[0] col-12 md:hidden"
+        >
+          <Image
+            src={about_img}
+            alt="Tractor "
+            quality={100}
+            className="cover-img about-img rounded-r-md"
+          />
+        </motion.div>
+      <div className="flex flex-col flex-lg-row pb-32">
         <motion.div 
           initial={{ opacity: 0, x:-100 }} 
           whileInView={{ opacity: 1, x: 0 }} 
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="mt-5 mt-lg-0 col-12 col-md-6 md:pr-24"
+          className="mt-5 mt-lg-0 col-12 col-md-6 md:pr-24 hidden md:flex"
         >
           <Image
             src={about_img}
@@ -34,18 +48,18 @@ const AboutUs = () => {
               whileInView={{ opacity: 1, x: 0 }} 
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="shape shape-7" 
+              className="shape shape-7 z-[1]" 
             />
             <motion.h1
               initial={{ opacity: 0, y:-50 }} 
               whileInView={{ opacity: 1, y: 0 }} 
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="main-heading"
+              className="main-heading text-white md:text-black"
             >
               ABOUT US
             </motion.h1>
-          </div>
+          </div>          
 
           <motion.p
             initial={{ opacity: 0, x:100 }} 
@@ -76,8 +90,7 @@ const AboutUs = () => {
             transition={{ delay: 1.25, duration: 0.5 }}
             viewport={{ once: true }}
           >
-            As a trusted partner, we take pride in fostering long-term relationships and empowering our clients to thrive in the evolving mining sector.
-            For more information on the joint venture, view article <span className="green-text font-semibold"><span className="font-semibold">here</span></span>
+            As a trusted partner, we take pride in fostering long-term relationships and empowering our clients to thrive in the evolving mining sector.            
           </motion.p>
 
           <br />
