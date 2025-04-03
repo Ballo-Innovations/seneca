@@ -43,7 +43,7 @@
 }
 
 .team-member p {
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
   font-weight: 400;
 }
 
@@ -75,7 +75,7 @@
 .team-member img {
   border-radius: 10px;
   width: 20em;
-  height: 18em;
+  height: 22em;
   margin-bottom: 1em;
   object-fit: cover;
   object-position: top;
@@ -95,6 +95,7 @@
   text-transform: capitalize;
   width: max-content;
   margin-bottom: 0.5rem;
+  font-size: 1.3em;
 }
 
 .team-shape {
@@ -116,6 +117,20 @@
   /* background-color: var(--brand-green) !important; */
 }
 
+.expanded-1 {
+  width: fit-content;
+  height: fit-content;
+}
+
+.modal-shape {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  background-color: var(--brand-green) !important;
+  border-radius: 10px;
+  z-index: 0;
+}
+
 @media (width <= 786px) {
   .team-member {
     width: 100% !important;
@@ -129,7 +144,7 @@
   .shape-12 {
     width: 100%;
     border-radius: 0;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
   }
 
   .mobile-dot {
@@ -156,5 +171,9 @@
   .team-shape-3 {
     top: 40%;
     background-color: rgba(0, 0, 0, 0.9) !important;
+  }
+
+  .modal-content {
+    text-align: center;
   }
 }
