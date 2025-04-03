@@ -8,9 +8,9 @@ import './team.css'
 import fabric from '@/public/images/background/curvy-silk.jpg'
 import Image from "next/image"
 import mudenda from '@/public/images/team/person (1).jpeg'
-import Sumehn from '@/public/images/team/person (2).jpeg'
-import Ash from '@/public/images/team/person (3).jpeg'
-import Reece  from '@/public/images/team/person (4).jpeg'
+import mwelwa from '@/public/images/team/person (5).jpeg'
+import derek from '@/public/images/team/person (6).jpeg'
+import andrew  from '@/public/images/team/person (7).jpeg'
 
 const Team = () => {
   return (
@@ -45,48 +45,52 @@ const Team = () => {
           <div className='row'>
             <div className='team-member relative col-4'>
               <Image
-                src={Ash}
+                className="team-member-photo"
+                src={mudenda}
                 alt="Ash Sewraj"
                 quality={100}
               />
               <div className="team-shape" />
-              <p className='name'>Ash Sewraj</p>
-              <p>Group Chairman, South Africa/Zambia</p>
+              <p className='name'>Maybin Mudenda</p>
+              <p>CEO, Zambia</p>
             </div>
             <span className='col-3' />
             <div className='team-member relative col-4'>
                 <Image
-                  src={mudenda}
+                  className="team-member-photo"
+                  src={mwelwa}
                   alt="Maybin Mudenda"
                   quality={100}
                 />
               <div className="team-shape team-shape-2" />
-              <p className='name'>Maybin Mudenda</p>
-              <p>CEO, Zambia</p>
+              <p className='name'>MWELWA CHIBESAKUNDA</p>
+              <p>Non - Executive Director,  UK, USA, Zambia</p>
             </div>
           </div>
 
           <div className='row'>
             <div className='team-member relative col-4'>
               <Image
-                src={Sumehn}
+                className="team-member-photo-3"
+                src={derek}
                 alt="Sumehn Sewraj"
                 quality={100}
               />
               <div className="team-shape team-shape-2" />
-              <p className='name'>Sumehn Sewraj</p>
-              <p>CEO, South Africa</p>
+              <p className='name'>DEREK CAMPBELL</p>
+              <p>Non - Executive Director,  UAE, USA</p>
             </div>
             <span className='col-3' />
             <div className='team-member relative col-4'>
               <Image
-                src={Reece}
+                className="team-member-photo-4"
+                src={andrew}
                 alt="Reece Currin"
                 quality={100}
               />
               <div className="team-shape team-shape-3" />
-              <p className='name'>Reece Currin</p>
-              <p>Executive Director, South Africa/Zambia</p>
+              <p className='name'>ANDREW SEKANDI</p>
+              <p> Non - Executive Director, UK</p>
             </div>
           </div>
         </div>

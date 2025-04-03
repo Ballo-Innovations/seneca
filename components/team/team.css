@@ -71,17 +71,29 @@
   margin-bottom: 3em;
 }
 
+
 .team-member img {
   border-radius: 10px;
   width: 20em;
   height: 18em;
   margin-bottom: 1em;
   object-fit: cover;
+  object-position: top;
   box-shadow: 5px -5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-photo-3 {
+  object-position: center 20% !important;
+}
+
+.team-member-photo-4 {
+  object-position: center 22% !important;
 }
 
 .team-member .name {
   font-weight: bold;
+  text-transform: capitalize;
+  width: max-content;
 }
 
 .team-shape {
