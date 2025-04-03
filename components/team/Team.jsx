@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 // Import Assets
 import './team.css'
-import fabric from '@/public/images/background/curvy-silk.jpg'
+import fabric from '@/public/images/background/curvy-fabric-light.png'
 import Image from "next/image"
 import mudenda from '@/public/images/team/person (1).jpeg'
 import mwelwa from '@/public/images/team/person (5).jpeg'
@@ -28,13 +28,13 @@ const Team = () => {
           whileInView={{ opacity: 1, y: 0 }} 
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="main-heading"
+          className="main-heading text-black"
         >
           OUR <br/> EXECUTIVE <br/> TEAM
         </motion.h1>
       </div>
       <motion.div
-        className="team-container mt-10 mb-20 py-10 relative"
+        className="team-container mt-10 mb-20 py-10 relative text-black"
         initial={{ opacity: 0, y:50 }} 
         whileInView={{ opacity: 1, y: 0 }} 
         transition={{ delay: 0.5, duration: 1 }}
@@ -64,7 +64,7 @@ const Team = () => {
                 />
               <div className="team-shape team-shape-2" />
               <p className='name'>MWELWA CHIBESAKUNDA</p>
-              <p>Non - Executive Director,  UK, USA, Zambia</p>
+              <p>Executive Director,  UK, USA, Zambia</p>
             </div>
           </div>
 
@@ -77,8 +77,8 @@ const Team = () => {
                 quality={100}
               />
               <div className="team-shape team-shape-2" />
-              <p className='name'>DEREK CAMPBELL</p>
-              <p>Non - Executive Director,  UAE, USA</p>
+              <p className='name'>C. DEREK CAMPBELL</p>
+              <p>Executive Director,  UAE, USA</p>
             </div>
             <span className='col-3' />
             <div className='team-member relative col-4'>
@@ -90,7 +90,7 @@ const Team = () => {
               />
               <div className="team-shape team-shape-3" />
               <p className='name'>ANDREW SEKANDI</p>
-              <p> Non - Executive Director, UK</p>
+              <p> Executive Director, UK</p>
             </div>
           </div>
         </div>
