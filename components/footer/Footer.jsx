@@ -75,7 +75,7 @@ const Footer = () => {
                 <span className="font-extralight">Designed & created by</span> <a className="text-white font-bold" href="https://balloinnovations.com/">Ballo Innovations</a>
               </div>
               <div className="px-1 text-sm font-extralight">
-                &copy; 2024 SENECA COMMODITIES. All Rights Reserved
+                &copy; 2025 SENECA COMMODITIES. All Rights Reserved
               </div>
             </div>
           </div>
