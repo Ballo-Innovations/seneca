@@ -131,19 +131,19 @@ const Team = () => {
             onClick={() => setSelectedMember(null)} // Close modal when background is clicked
           >
             <motion.div
-              className="bg-white/90 p-6 rounded-lg shadow-lg w-[95vw] md:w-[80vw] h-[90vh] md:h-[80vh] relative overflow-auto"
+              className="bg-white/90 p-6 rounded-lg shadow-lg w-[95vw] md:w-[80vw] h-[95vh] md:h-[80vh] relative overflow-auto"
               style={{ backgroundImage: `url(${fabric.src})` }}
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
             >
-              {/* <button 
-                className="text-black absolute top-2 right-7 text-5xl font-light cursor-pointer border w-[4rem] h-[4rem] flex justify-center items-center bg-red-500"
+              <button 
+                className="text-white fixed top-[6%] right-[5%] text-5xl font-light cursor-pointer border w-[3rem] h-[3rem] flex md:hidden justify-center items-center bg-black/90 rounded-full z-[3]"
                 onClick={() => setSelectedMember(null)}
               >
                 &times;
-              </button> */}
+              </button>
               <div className="flex flex-col md:flex-row h-full relative gap-10">
                 <Image 
                   src={selectedMember.image}
@@ -151,7 +151,7 @@ const Team = () => {
                   className={`w-[90vw] h-[90vw] md:w-auto md:h-auto  relative rounded-md object-cover flex-[2] team-member-photo-${selectedMember.id}`}
                 />
                 <div className="flex-col flex-[3] py-20 modal-content text-black">
-                  <h2 className="text-5xl font-bold relative w-fit uppercase">
+                  <h2 className="text-4xl md:text-5xl font-bold relative w-fit uppercase">
                     <span className="z-[1] relative">{selectedMember.name}</span>
                     <motion.div 
                       initial={{ opacity: 0, x: -100 }} 
