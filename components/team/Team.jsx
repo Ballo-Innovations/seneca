@@ -111,9 +111,9 @@ const Team = () => {
                   alt={member.name}
                   quality={100}
                 />
-                <p className='name m-0'>{member.name}</p>
-                <p className="text-[1.3rem] mb-1">{member.title}</p>
-                <p className="text-sm italic font-bold">{member.location}</p>
+                <p className='name m-0 md:text-black'>{member.name}</p>
+                <p className="text-[1.3rem] mb-1 md:text-black">{member.title}</p>
+                <p className="text-sm italic font-bold md:text-black">{member.location}</p>
               </div>
             ))}
           </div>
