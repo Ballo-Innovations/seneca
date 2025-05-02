@@ -86,7 +86,7 @@ export default function BlogPage() {
 
             {/* Sidebar Articles */}
             <div className="space-y-6">
-              {filteredPosts.slice(1).map((post) => (
+              {filteredPosts.slice(1, 4).map((post) => (
                 <Link key={post.slug} href={`/blog/${post.slug}`} className="flex items-center gap-4 group text-gray-900 no-underline hover:underline">
                   <Image
                     src={post.image}
@@ -118,8 +118,8 @@ export default function BlogPage() {
 
             {/* Sidebar Articles */}
             <div className="grid md:grid-cols-3 gap-8">
-              {filteredPosts.slice(1).map((post) => (
-                <Link key={post.slug} href={`/blog/${post.slug}`} className="flex flex-col max-w-sm items-center gap-4 group text-gray-900 no-underline hover:underline">
+              {filteredPosts.slice(4).map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} className="flex flex-col max-w-sm items-center p-2 rounded-lg gap-4 group bg-white shadow-md text-gray-900 no-underline hover:underline">
                   <Image
                     src={post.image}
                     alt={post.title}
