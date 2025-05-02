@@ -7,9 +7,9 @@ export async function generateStaticParams() {
 
 export default function BlogPost({ post }) {
   return (
-    <section className="relative text-center md:text-left min-h-screen bg-gradient-to-b from-[whitesmoke] to-white text-gray-900 py-16 px-6 nav-padding">
+    <section className="blog-post relative min-h-screen bg-gradient-to-b from-[whitesmoke] to-white text-gray-900 py-16 px-6 nav-padding">
       <div className="absolute -left-[4rem] lg:-left-5 top-[50%] h-[40%] w-[5rem] shape rounded-md" />
-      <div className="md:max-w-5xl lg:max-w-6xl mx-auto z-[1] relative">
+      <div className="max-w-2xl md:max-w-3xl lg:max-w-6xl mx-auto z-[1] relative">
         <div className="absolute right-[-30%] md:right-[-10%] top-0 h-40 w-40 shape rounded-md z-[-1]" />        
         <h1 className="text-4xl font-bold mb-4 leading-tight text-gray-900">
           {post.title}
