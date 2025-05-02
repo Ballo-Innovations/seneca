@@ -59,7 +59,7 @@ export default function BlogPage() {
 
       {/* Articles Section */}
       <section className="max-w-7xl mx-auto px-4 py-20">
-        <h2 className="text-3xl font-bold mb-8">Popular Articles</h2>
+        <h2 className="text-4xl text-black font-bold mb-8">Popular Articles</h2>
 
         {filteredPosts.length === 0 ? (
           <p className="text-gray-600">No articles found for “{search}”</p>
@@ -85,7 +85,7 @@ export default function BlogPage() {
             </Link>
 
             {/* Sidebar Articles */}
-            <div className="space-y-6">
+            <div className="flex flex-col justify-center gap-4">
               {filteredPosts.slice(1, 4).map((post) => (
                 <Link key={post.slug} href={`/blog/${post.slug}`} className="flex items-center gap-4 group text-gray-900 no-underline hover:underline">
                   <Image
@@ -109,7 +109,7 @@ export default function BlogPage() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 pb-20">
-        <h2 className="text-3xl font-bold mb-8">Latest Articles</h2>
+        <h2 className="text-4xl text-black font-bold mb-8">Latest Articles</h2>
 
         {filteredPosts.length === 0 ? (
           <p className="text-gray-600">No articles found for “{search}”</p>
