@@ -83,6 +83,10 @@ const Navbar = () => {
             <li className={`nav-item ${pathname === '/get-in-touch' ?  'active': ''}`}>
               <Link href="/get-in-touch" className="nav-link" onClick={() => setShowMenu(false)}>Get in Touch</Link>
             </li>
+
+            <li className={`nav-item ${pathname === '/blog' ?  'active': ''}`}>
+              <Link href="/blog" className="nav-link" onClick={() => setShowMenu(false)}>Blog</Link>
+            </li>
           </ul>
           </div> 
       </nav>
