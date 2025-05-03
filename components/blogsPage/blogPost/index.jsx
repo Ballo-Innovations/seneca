@@ -11,11 +11,11 @@ export default function BlogPost({ post }) {
       <div className="absolute -left-[4rem] lg:-left-5 top-[50%] h-[40%] w-[5rem] shape rounded-md" />
       <div className="max-w-2xl md:max-w-3xl lg:max-w-6xl mx-auto z-[1] relative">
         <div className="absolute right-[-40%] md:right-[-10%] top-0 h-40 w-40 shape rounded-md z-[-1]" />        
-        <h1 className="text-4xl font-bold mb-4 leading-tight text-gray-900 px-3 md:px-0">
+        <h1 className="text-4xl font-bold mb-4 leading-tight text-gray-900 px-[0.75rem] md:px-0">
           {post.title}
         </h1>                
 
-        <div className="text-sm text-green-950 mb-2">
+        <div className="text-sm text-green-950 mb-2 px-[0.75rem] md:px-0">
           {post.date} · {post.category}
         </div>
         <Image
