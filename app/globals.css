@@ -186,6 +186,10 @@ body {
   .main-heading {
     font-size: 2.5em;
   }
+
+  .nav-padding {
+    padding-top: 8em;
+  }
 }
 
 @media (width <= 768px){

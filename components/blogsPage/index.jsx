@@ -20,7 +20,7 @@ export default function BlogPage() {
     <main className="bg-[whitesmoke] text-gray-900">
       {/* Hero Section */}
       <section
-        className="relative py-[8rem] bg-cover bg-center flex items-center justify-center text-white"
+        className="relative py-[8rem] bg-cover bg-center flex items-center justify-center text-white w-screen overflow-hidden"
         style={{ backgroundImage: `url("${blogsPageCover.src}")` }}
       >
         <div className="absolute h-full w-full bg-white/50" />
@@ -39,7 +39,7 @@ export default function BlogPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-10">            
             Your African Trade Partner
           </h1>
-          <div className="mt-6 flex justify-center">
+          <div className="mt-6 flex justify-center px-5 md:px-0">
             <input
               type="text"
               placeholder="Search articles..."
@@ -58,7 +58,7 @@ export default function BlogPage() {
       </section>
 
       {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 py-20">
+      <section className="max-w-7xl mx-auto px-3 md:px-4 py-20">
         <h2 className="text-4xl text-black font-bold mb-8">Popular Articles</h2>
 
         {filteredPosts.length === 0 ? (
@@ -108,7 +108,7 @@ export default function BlogPage() {
         )}
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 pb-20">
+      <section className="max-w-7xl mx-auto px-2 md:px-4 pb-20">
         <h2 className="text-4xl text-black font-bold mb-8">Latest Articles</h2>
 
         {filteredPosts.length === 0 ? (
