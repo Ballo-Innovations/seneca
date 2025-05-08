@@ -1,0 +1,7 @@
+.blog-list {
+  list-style: square;
+}
+
+.blog-article {
+  padding-inline: 1rem;
+}
