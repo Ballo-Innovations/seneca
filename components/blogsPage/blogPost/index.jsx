@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import blogPosts from '@/data/blogPosts'; // Ensure this path is correct
+import blogPosts from '@/data/blogPosts';
 import DOMPurify from 'dompurify';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import './style.css';
 
 export async function generateStaticParams() {
@@ -12,8 +12,6 @@ export async function generateStaticParams() {
 }
 
 export default function BlogPost({ post }) {
-  // const post = blogPosts.find((p) => p.slug === params.slug);
-
   const [processed, setProcessed] = useState({ html: '', toc: [] });
 
   useEffect(() => {
@@ -33,11 +31,14 @@ export default function BlogPost({ post }) {
     setProcessed({ html: div.innerHTML, toc: headings });
   }, [post.content]);
 
+  // Scroll-based motion
+  const { scrollYProgress } = useScroll();
+  const tocTranslateY = useTransform(scrollYProgress, [0, 1], [0, 0]);
+
   if (!post) return <div>Post not found</div>;
 
   return (
-    <section className="blog-post relative min-h-screen bg-gradient-to-b from-[whitesmoke] to-white text-gray-900 py-16 md:px-6 nav-padding w-screen overflow-hidden">
-      {/* <div className="absolute -left-[4rem] lg:-left-5 top-[50%] h-[40%] w-[5rem] shape rounded-md" /> */}
+    <section className="blog-post relative min-h-screen bg-gradient-to-b from-[whitesmoke] to-white text-gray-900 py-16 md:px-6 nav-padding w-screen overflow-visible">
       <div className="md:px-20 mx-auto z-[1] relative">
         <div className="absolute right-[-40%] md:right-[2%] top-0 h-40 w-72 bg-[#16761f] rounded-md z-[-1]" />
 
@@ -57,14 +58,15 @@ export default function BlogPost({ post }) {
           className="md:rounded-md mb-8 w-full md:h-[30rem] object-cover shadow-xl"
         />
 
-        {/* Table of Contents */}
-        <div className="flex flex-col lg:flex-row relative">
-        {processed.toc.length > 0 && (
+        {/* Flex container must allow aside to stay sticky */}
+        <div className="flex flex-col lg:flex-row lg:items-start gap-8">
+          {processed.toc.length > 0 && (
             <motion.aside
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: -20 }}
+              animate={{ y: 0 }}
+              style={{ y: tocTranslateY }}
               transition={{ duration: 0.5 }}
-              className="hidden lg:block w-[25%] sticky top-[8rem] h-[75vh] bg-[#0d6115] text-white border border-gray-200 p-4 rounded-md shadow-sm"
+              className="hidden lg:block w-[25%] sticky top-[8rem] h-[75vh] overflow-y-auto bg-[#0d6115] text-white border border-gray-200 p-4 rounded-md shadow-sm z-10"
             >
               <h2 className="text-xl font-semibold mb-2">Table of Contents</h2>
               <ul className="space-y-2 list-disc">
@@ -80,11 +82,12 @@ export default function BlogPost({ post }) {
           )}
 
           <article
-            className="blog-article flex-1 text-lg leading-relaxed text-gray-900 space-y-6 md:mx-16"  
+            className="blog-article flex-1 text-lg leading-relaxed text-gray-900 space-y-6 md:mx-16"
             dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(processed.html) }}
           />
         </div>
       </div>
     </section>
+
   );
 }
