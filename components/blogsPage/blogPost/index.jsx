@@ -58,7 +58,7 @@ export default function BlogPost({ post }) {
         />
 
         {/* Table of Contents */}
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row relative">
         {processed.toc.length > 0 && (
             <motion.aside
               initial={{ opacity: 0, y: -20 }}

@@ -80,12 +80,12 @@ const Navbar = () => {
               <Link href="/team" className="nav-link" onClick={() => setShowMenu(false)}>Our Team</Link>
             </li>
 
-            <li className={`nav-item ${pathname === '/get-in-touch' ?  'active': ''}`}>
-              <Link href="/get-in-touch" className="nav-link" onClick={() => setShowMenu(false)}>Get in Touch</Link>
-            </li>
-
             <li className={`nav-item ${pathname.includes('/blog') ?  'active': ''}`}>
               <Link href="/blog" className="nav-link" onClick={() => setShowMenu(false)}>Blog</Link>
+            </li>
+
+            <li className={`nav-item ${pathname === '/get-in-touch' ?  'active': ''}`}>
+              <Link href="/get-in-touch" className="nav-link" onClick={() => setShowMenu(false)}>Get in Touch</Link>
             </li>
           </ul>
           </div> 
