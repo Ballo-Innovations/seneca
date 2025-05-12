@@ -5,3 +5,8 @@
 .blog-article {
   padding-inline: 1rem;
 }
+
+.blog-post h1,
+.blog-post h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
