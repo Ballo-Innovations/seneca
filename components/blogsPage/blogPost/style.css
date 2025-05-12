@@ -7,6 +7,8 @@
 }
 
 .blog-post h1,
-.blog-post h2 {
-  font-size: calc(1.325rem + 0.9vw);
+.blog-post h2,
+.blog-post h3 {
+  font-size: calc(0.7rem + 0.9vw) !important;
+  font-weight: 500;
 }
