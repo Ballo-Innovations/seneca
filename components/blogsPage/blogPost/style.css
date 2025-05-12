@@ -6,9 +6,9 @@
   padding-inline: 1rem;
 }
 
-.blog-post h1,
-.blog-post h2,
-.blog-post h3 {
+.blog-post article h1,
+.blog-post article h2,
+.blog-post article h3 {
   font-size: calc(0.7rem + 0.9vw) !important;
   font-weight: 500;
 }
