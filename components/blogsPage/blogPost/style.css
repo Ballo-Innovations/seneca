@@ -12,3 +12,11 @@
   font-size: calc(0.7rem + 0.9vw) !important;
   font-weight: 500;
 }
+
+.blog-post aside {
+  padding: 1.5rem;
+}
+
+.blog-post ul {
+  padding-left: 2rem;
+}

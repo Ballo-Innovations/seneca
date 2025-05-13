@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css"
 import "@/public/fonts/flaticon.css";
+import siteMetadata from "@/siteMetaData";
 
 export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
