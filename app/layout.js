@@ -7,8 +7,39 @@ import "bootstrap/dist/css/bootstrap.css"
 import "@/public/fonts/flaticon.css";
 
 export const metadata = {
-  title: "Seneca - Commodity trading company",
-  description: "Seneca commodities Limited is an agricultural commodity trading company that provides sourcing & trading services of agricultural commodities industrial usage(s) while maintaining the highest standards in commodity quality. We strive to bring high quality products for consumers in partnership with some of the world's most successful and sophisticated retailers, wholesalers, importers, packagers, canners, brokers & growers.",
+  metadataBase: new URL(siteMetadata.siteUrl),
+  title: siteMetadata.title,
+  description: siteMetadata.description,
+  keywords: siteMetadata.keywords,
+  creator: siteMetadata.author,
+  publisher: siteMetadata.author,
+  category: siteMetadata.keywords,
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    images: [siteMetadata.socialBanner],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteMetadata.title,
+    images: siteMetadata.socialBanner,
+  },
 };
 
 export default function RootLayout({ children }) {
