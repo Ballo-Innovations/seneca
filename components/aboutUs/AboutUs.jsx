@@ -68,8 +68,8 @@ const AboutUs = () => {
             viewport={{ once: true }}
             className='font-normal'
           >
-            <span className="green-text font-semibold"><span className="font-semibold">SENECA ZAMBIA LIMITED</span></span>, an <a href="www.egr-ltd.com" target="_blank" className="green-text font-semibold"><span className="font-semibold">Emerald Global Resources</span></a> affiliated platform, is a mining solutions and commodities supply company, specializing in the sourcing and supply of metals, mining, and industrial commodities. With a focus on Nickel, Cobalt, Copper, and other essential minerals, we support mining operations with high-quality equipment, materials, and project solutions.
-          </motion.p>
+            
+          </motion.p><span className="green-text font-semibold"><span className="font-semibold">SENECA ZAMBIA LIMITED</span></span>, an <a href="https://www.egr-ltd.com" target="_blank" className="green-text font-semibold"><span className="font-semibold">Emerald Global Resources</span></a> affiliated platform, is a mining solutions and commodities supply company, specializing in the sourcing and supply of metals, mining, and industrial commodities. With a focus on Nickel, Cobalt, Copper, and other essential minerals, we support mining operations with high-quality equipment, materials, and project solutions.
 
           <br />
 
